@@ -1,7 +1,7 @@
 <?php
-require_once(__DIR__ . "/../repositories/FileDao.impl.php");
-require_once(__DIR__ . "/../repositories/PdoDao.impl.php");
-require_once(__DIR__ . "/../validators/AuthorValidator.php");
+require_once(__DIR__ . "/../model/repositories/FileDao.impl.php");
+require_once(__DIR__ . "/../model/repositories/PdoDao.impl.php");
+require_once(__DIR__ . "/../model/validators/AuthorValidator.php");
 require_once(__DIR__ . "/../model/entities/Author.php");
 
 

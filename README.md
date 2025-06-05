@@ -6,24 +6,24 @@ Este proyecto es un sistema de gestión para libros y autores, implementado en P
 
 ```
 ├── app/                    # Directorio principal de la aplicación
+│   ├── config/            # Configuraciones y helpers
 │   ├── controllers/       # Controladores de la aplicación
 │   │   ├── AuthorController.php
 │   │   └── BookController.php
-│   ├── interfaces/        # Interfaces del sistema
 │   ├── model/            # Modelos y entidades
-│   │   └── entities/
+|   |   ├── repositories/ # Acceso a datos
+│   │   |   ├── FileDao.impl.php
+│   │   |   └── PdoDao.impl.php
+|   |   ├── interfaces/   # Interfaces
+|   |   ├── validators/   # Validaciones
+│   │   |   ├── AuthorValidator.php
+│   │   |   └── BookValidator.php
+│   │   └── entities/     # Entidades
 │   │       ├── Author.php
 │   │       ├── Book.php
 │   │       └── Model.php
-│   ├── repositories/      # Capa de acceso a datos
-│   │   ├── FileDao.impl.php
-│   │   └── PdoDao.impl.php
 │   ├── services/         # Servicios de la aplicación
-│   ├── validators/       # Validadores de datos
-│   │   ├── AuthorValidator.php
-│   │   └── BookValidator.php
 │   └── views/            # Vistas de la aplicación
-├── config/               # Configuraciones del sistema
 ├── public/              # Archivos públicos y punto de entrada
 ├── authors.json         # Almacenamiento de autores (modo archivo)
 └── books.json          # Almacenamiento de libros (modo archivo)

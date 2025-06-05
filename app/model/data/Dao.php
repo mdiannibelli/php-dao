@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/../../interfaces/Dao.interface.php');
+require_once(__DIR__ . "/../interfaces/Dao.interface.php");
 abstract class DAO implements DaoInterface
 {
     public abstract function getAll();

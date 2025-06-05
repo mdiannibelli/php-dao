@@ -1,5 +1,6 @@
 <?php
-require_once(__DIR__ . "/../model/data/Dao.php");
+require_once(__DIR__ . "/../interfaces/Dao.interface.php");
+require_once(__DIR__ . "/../data/Dao.php");
 
 class FileDaoImpl extends DAO
 {

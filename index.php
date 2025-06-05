@@ -1,6 +1,6 @@
 <?php
-require_once("./app/controllers/BookController.php");
-require_once("./app/controllers/AuthorController.php");
+require_once(__DIR__ . "/app/controllers/BookController.php");
+require_once(__DIR__ . "/app/controllers/AuthorController.php");
 
 $bookController = new BookController('file');
 $authorController = new AuthorController('file');
